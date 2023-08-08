@@ -7,7 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
         contents: write
-        issues: write
     steps: 
       - name: echo a string
         run: echo "hello everyone"
