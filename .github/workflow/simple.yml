@@ -2,17 +2,8 @@ name: Shell Commands
 on: [push]
 
 permissions:
-  issues: write
-  actions: write
-  checks: write
-  contents: write
-  deployments: write
-  packages: write
-  pull-requests: write
-  repository-projects: write
-  security-events: write
-  statuses: write
-
+        contents: write
+        issues: write
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
