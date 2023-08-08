@@ -1,18 +1,18 @@
 name: Shell Commands
 on: [push]
 
+permissions:
+  issues: write
 
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
-  permissions:
-    issues: write
     steps: 
-      - name: echo a string
-        run: echo "hello everyone"
-      - name: multiline script
-        run: |
-         node -v
-         npm -v
+    - name: echo a string
+      run: echo "hello everyone"
+    - name: multiline script
+      run: |
+       node -v
+       npm -v
 
     
