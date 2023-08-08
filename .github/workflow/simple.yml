@@ -1,12 +1,13 @@
 name: Shell Commands
 on: [push]
 
-permissions:
-        contents: write
-        issues: write
+
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
+    permissions:
+        contents: write
+        issues: write
     steps: 
       - name: echo a string
         run: echo "hello everyone"
