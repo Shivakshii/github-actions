@@ -1,7 +1,6 @@
 name: Shell Commands
 on: [push]
 
-
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
@@ -13,7 +12,4 @@ jobs:
       - name: multiline script
         run: |
          node -v
-         npm -v
-
-    
- 
+         npm -v 
