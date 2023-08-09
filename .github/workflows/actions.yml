@@ -11,7 +11,7 @@
                 pwd
                 ls -a
             - name: Checkout
-              uses: actions/checkout@v1.1
+              uses: actions/checkout@v1
 
             - name: List Files After Checkout
               run: |
